@@ -113,7 +113,7 @@ class DataPreprocessor:
 if __name__ == "__main__":
     dataset_name = 'selfrag/selfrag_train_data'  # Replace with your dataset
     #dataset_name = 'imdb'
-    tokenizer_model_name = 'zypher'  # Use GPT-2 tokenizer
+    tokenizer_model_name = 'HuggingFaceH4/zephyr-7b-alpha'  # Use GPT-2 tokenizer
     subset_size = 2  # Adjust the subset size as needed
 
     preprocessor = DataPreprocessor(dataset_name, tokenizer_model_name, splits=['train', 'test'], subset_size=subset_size)
